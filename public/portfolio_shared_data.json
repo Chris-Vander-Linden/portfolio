@@ -1,17 +1,17 @@
 {
     "basic_info": {
-      "name": "Ursula Lopez",
+      "name": "Chris Vander Linden",
       "titles": [ "Software Developer" ],
       "social": [
         {
           "name": "github",
-          "url": "https://github.com",
+          "url": "https://github.com/Chris-Vander-Linden",
           "class": "fab fa-github"
         },
         {
-          "name": "instagram",
-          "url": "https://www.instagram.com",
-          "class": "fab fa-instagram"
+          "name": "linkedin",
+          "url": "https://www.linkedin.com/in/chris-vander-linden-895680241/",
+          "class": "fab fa-linkedin"
         }
       ],
       "image": "myProfile.jpg"
@@ -29,19 +29,19 @@
           "level": "95"
         },
         {
-          "name": "Angular",
-          "class": "devicon-angularjs-plain",
-          "level": "80"
-        },
-        {
-          "name": "TypeScript",
-          "class": "devicon-typescript-plain",
-          "level": "90"
-        },
-        {
           "name": "JavaScript",
           "class": "devicon-javascript-plain",
           "level": "70"
+        },
+        {
+          "name": "React",
+          "class": "devicon-react-plain",
+          "level": "80"
+        },
+        {
+          "name": "Php",
+          "class": "devicon-php-plain",
+          "level": "90"
         },
         {
           "name": "Sass",
@@ -54,13 +54,13 @@
           "level": "85"
         },
         {
-          "name": "C#",
-          "class": "devicon-csharp-plain",
+          "name": "PhotoShop",
+          "class": "devicon-photoshop-line",
           "level": "65"
         },
         {
-          "name": "MySql",
-          "class": "devicon-mysql-plain",
+          "name": "WordPress",
+          "class": "devicon-wordpress-plain",
           "level": "60"
         }
       ]
