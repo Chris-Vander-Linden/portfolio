@@ -9,7 +9,7 @@ import Home from "./components/Home";
 
 class App extends Component {
 
-  constructor(props) {
+  constructor (props) {
     super();
     this.state = {
       foo: "bar",
@@ -18,35 +18,9 @@ class App extends Component {
     };
   }
 
-  applyPickedLanguage = (pickedLanguage, oppositeLangIconId) => {
-    this.swapCurrentlyActiveLanguage(oppositeLangIconId);
-    document.documentElement.lang = pickedLanguage;
-    var resumePath =
-      document.documentElement.lang === window.$primaryLanguage
-        ? `res_primaryLanguage.json`
-        : `res_secondaryLanguage.json`;
-    this.loadResumeFromPath(resumePath);
-  }
-
-  swapCurrentlyActiveLanguage = (oppositeLangIconId) => {
-    var pickedLangIconId =
-      oppositeLangIconId === window.$primaryLanguageIconId
-        ? window.$secondaryLanguageIconId
-        : window.$primaryLanguageIconId;
-    document
-      .getElementById(oppositeLangIconId)
-      .removeAttribute("filter", "brightness(40%)");
-    document
-      .getElementById(pickedLangIconId)
-      .setAttribute("filter", "brightness(40%)");
-  }
-
   componentDidMount = () => {
     this.loadSharedData();
-    this.applyPickedLanguage(
-      window.$primaryLanguage,
-      window.$secondaryLanguageIconId
-    );
+    this.loadResumeFromPath(`res_primaryLanguage.json`);
   }
 
   loadResumeFromPath = (path) => {
@@ -80,27 +54,26 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <Header sharedData={this.state.sharedData.basic_info} />
+        <Header sharedData={ this.state.sharedData.basic_info } />
         <Routes>
-          <Route 
-            exact path="/" 
-            element={<Home
-              resumeData={this.state.resumeData}
-              sharedData={this.state.sharedData}
-            />}>
+          <Route
+            exact path="/"
+            element={ <Home
+              resumeData={ this.state.resumeData }
+              sharedData={ this.state.sharedData }
+            /> }>
           </Route>
-          <Route 
-            path="/about" 
-            element={<About
-              resumeBasicInfo={this.state.resumeData.basic_info}
-              sharedBasicInfo={this.state.sharedData.basic_info}
-            />}>
+          <Route
+            path="/about"
+            element={ <About
+              resumeBasicInfo={ this.state.resumeData.basic_info }
+              sharedBasicInfo={ this.state.sharedData.basic_info }
+            /> }>
           </Route>
         </Routes>
-        <Footer 
-          sharedBasicInfo={this.state.sharedData.basic_info}
-          applyPickedLanguage={this.applyPickedLanguage} 
-        />  
+        <Footer
+          sharedBasicInfo={ this.state.sharedData.basic_info }
+        />
       </Router>
     );
   }
