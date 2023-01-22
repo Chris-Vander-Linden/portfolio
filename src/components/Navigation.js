@@ -9,14 +9,14 @@ class Navigation extends Component {
 
   render() {
 
-
+    console.log(this.props.name);
 
     return <nav>
       <Nav activeKey="/home" fill >
         <Nav.Item>
           <LinkContainer to="/">
             <Nav.Link href="/">
-              { `${this.props.name}`}
+              {this.props.name}
           </Nav.Link>
           </LinkContainer>
         </Nav.Item>

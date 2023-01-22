@@ -19,6 +19,7 @@ class App extends Component {
   }
 
   componentDidMount = () => {
+    console.log("Mount")
     this.loadSharedData();
     this.loadResumeFromPath(`res_primaryLanguage.json`);
   }
