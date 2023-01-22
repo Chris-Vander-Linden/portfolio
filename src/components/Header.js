@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Navigation from "./Navigatioin.js";
+import Navigation from "./Navigation.js";
 
 class Header extends Component {
   titles = [];
@@ -24,27 +24,34 @@ class Header extends Component {
   }
 
   render() {
+
+    // this is required in case data is missing or optional chaining.
     if (this.props.sharedData) {
       this.titles = this.props.sharedData.titles;
       //...map(x => [ x.toUpperCase(), 1500 ] ).flat();
     }
 
+    // ????
     const HeaderTitleTypeAnimation = React.memo(() => {
       return this.titles
     }, (props, prevProp) => true);
 
+
+
+ 
     return (
       <header id="home" >
-        <Navigation checked={ this.state.checked } onThemeSwitchChange={ this.onThemeSwitchChange } name={ this.props.sharedData.name } />
+        <Navigation checked={ this.state.checked } onThemeSwitchChange={ this.onThemeSwitchChange } name={ this.props?.sharedData?.name ?? '' } />
         <div className="row aligner" >
           <div className="col-md-12">
             <div>
-              {/* Title - This is hidden behind fixed nav.
-              <HeaderTitleTypeAnimation />
-              */ }
+
 
               {/* Header Img Here. */ }
               <img id="header-background" src="images/home-background.png" alt="computer" />
+
+
+              <HeaderTitleTypeAnimation />
             </div>
           </div>
         </div>
