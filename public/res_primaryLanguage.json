@@ -11,18 +11,18 @@
     },
     "projects": [
       {
-        "title": "Data Analyst",
-        "startDate": "2015",
-        "description": "Developed custom Google App scripts and PhotoShop scripts to bulk process and format scraped web data for our eCommerce and third party platform sites.",
+        "title": "Flex Grid Sass Form",
+        "startDate": "2022",
+        "description": "I used grid and flex layouts while styling with Dart Sass.",
         "images": [
-          "images/portfolio/animal-shelter/p1.jpg",
-          "images/portfolio/animal-shelter/p2.jpg"
+          "images/portfolio/flex-grid/flex-grid-dark.png",
+          "images/portfolio/flex-grid/flex-grid-light.png"
         ],
         "url": "",
         "technologies": [
           {
-            "class": "devicon-angularjs-plain",
-            "name": "PhotoShop"
+            "class": "devicon-sass-plain",
+            "name": "Sass"
           },
           {
             "class": "devicon-typescript-plain",
