@@ -10,6 +10,7 @@ class Navigation extends Component {
   render() {
     return <nav>
       <Nav activeKey="/home" fill >
+
         <div id="header-title-container">
           <Nav.Item>
             <LinkContainer to="/">
@@ -17,7 +18,6 @@ class Navigation extends Component {
               <Nav.Link href="/">
 
                 <div><FaGlobe /></div>
-
                 <div id="name-title">
                 <div>{ this.props.name }</div>
                 <div>{ `<${this.props.title}/>`}</div>
@@ -30,6 +30,12 @@ class Navigation extends Component {
 
         <div id="nav-links">
           <Nav.Item>
+            <LinkContainer to="/more">
+              <Nav.Link eventKey="about">More</Nav.Link>
+            </LinkContainer>
+          </Nav.Item>
+
+          <Nav.Item>
             <LinkContainer to="/about">
               <Nav.Link eventKey="about">About</Nav.Link>
             </LinkContainer>
@@ -39,7 +45,7 @@ class Navigation extends Component {
               checked={ this.props.checked }
               onChange={ this.props.onThemeSwitchChange }
 
-              offColor="#baaa80"
+              offColor="#c7c7c7"
               onColor="#353535"
               className="react-switch mx-auto"
 
