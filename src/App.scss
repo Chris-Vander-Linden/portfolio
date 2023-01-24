@@ -2,6 +2,8 @@
 @import '/src/scss/themes/theme-light.scss';
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap');
 
+
+
 html {
 	font-size: 62.5%;
 	-webkit-font-smoothing: antialiased;
@@ -36,16 +38,14 @@ header {
 	-webkit-background-size: cover;
 	text-align: center;
 	overflow: hidden;
-	background-color: #d2a1e9;
+	background-color: #ca57ff;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	padding-top: 30px;
+	padding-top: 50px;
 	padding-bottom: 0;
 }
-
-
 
 
 
@@ -59,12 +59,13 @@ header nav {
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
+	padding: 5px;
 }
 
 header nav .nav-fill .nav-item {
 	display: flex;
 	align-items: center;
-	padding: 5px;
+	padding: 0px;
 	cursor: pointer;
 }
 
@@ -76,12 +77,99 @@ a.nav-link:visited {
 	font-weight: bold;
 }
 
-
-
-
 #header-background {
 	width: 100%;
 }
+
+#title {
+	position: absolute;
+	top: 50px;
+	font-style: italic;
+}
+
+header .nav.nav-fill {
+	width: 100%;
+	justify-content: space-between;
+}
+
+header .nav.nav-fill div:nth-child(2) {
+	justify-content: flex-end;
+}
+
+header .nav.nav-fill div:nth-child(2) div {
+	flex: initial;
+
+}
+
+#name-title>div:nth-child(2) {
+	font-size: 13px;
+	font-style: italic;
+	opacity: .8;
+}
+
+.nav-fill div {
+	display: flex;
+	align-items: center;
+}
+
+.nav-link {
+	display: block;
+	padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+	font-size: var(--bs-nav-link-font-size);
+	font-weight: var(--bs-nav-link-font-weight);
+	color: var(--bs-nav-link-color);
+	text-decoration: none;
+	transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+.nav-link,
+.nav-link a {
+	padding: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+
+header nav .nav-fill .nav-item {
+	display: flex;
+	align-items: center;
+	padding: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	cursor: pointer;
+}
+
+#header-title-container .nav-item .nav-link a,
+.nav,
+.nav-link,
+.nav-link a {
+	padding: 0px !important;
+	;
+}
+
+
+#name-title {
+	flex-direction: column;
+}
+
+
+#header-title-container>div>a {
+	display: flex;
+}
+
+
+
+#header-title-container>div>a>div:nth-child(1) {
+	font-size: 44px;
+	padding: 0px 5px;
+}
+
+
+
+
 
 
 

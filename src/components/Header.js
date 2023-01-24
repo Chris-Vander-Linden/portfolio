@@ -25,33 +25,25 @@ class Header extends Component {
 
   render() {
 
+    let title = '';
+    let name = '';
+
     // this is required in case data is missing or optional chaining.
     if (this.props.sharedData) {
-      this.titles = this.props.sharedData.titles;
+      title = this.props.sharedData.titles;
+      name = this.props.sharedData.name;
       //...map(x => [ x.toUpperCase(), 1500 ] ).flat();
     }
 
-    // ????
-    const HeaderTitleTypeAnimation = React.memo(() => {
-      return this.titles
-    }, (props, prevProp) => true);
-
-
-
- 
     return (
       <header id="home" >
-        <Navigation checked={ this.state.checked } onThemeSwitchChange={ this.onThemeSwitchChange } name={ this.props?.sharedData?.name ?? '' } />
+        <Navigation name={ name } checked={ this.state.checked } onThemeSwitchChange={ this.onThemeSwitchChange } title={ title } />
         <div className="row aligner" >
           <div className="col-md-12">
             <div>
 
-
               {/* Header Img Here. */ }
               <img id="header-background" src="images/home-background.png" alt="computer" />
-
-
-              <HeaderTitleTypeAnimation />
             </div>
           </div>
         </div>

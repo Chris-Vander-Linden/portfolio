@@ -18,19 +18,15 @@
           "images/portfolio/flex-grid/flex-grid-dark.png",
           "images/portfolio/flex-grid/flex-grid-light.png"
         ],
-        "url": "",
+        "url": "https://github.com/Chris-Vander-Linden/flex-grid-fetch-form",
         "technologies": [
           {
             "class": "devicon-sass-plain",
             "name": "Sass"
           },
           {
-            "class": "devicon-typescript-plain",
-            "name": "Google App Scripts"
-          },
-          {
-            "class": "devicon-csharp-plain",
-            "name": "Magento 2"
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
           }
         ]
       },
@@ -57,24 +53,20 @@
       {
         "title": "Horned Beast",
         "startDate": "2023",
-        "description": "One of the first apps I was working on my internship. I had to develop front-end implementation for app that shows 3D models of known buildings. This was also my first project in Angular framework. I've learned a lot!",
+        "description": "Placeholder text.  More info soon!",
         "images": [
-          "images/portfolio/adventure/p1.jpg",
-          "images/portfolio/adventure/p2.jpg"
+          "images/portfolio/horned-beast/horned-beast.png",
+          "images/portfolio/horned-beast/horned-beast-dark.png"
         ],
-        "url": "https://github.com",
+        "url": "https://github.com/Chris-Vander-Linden/horned-beast",
         "technologies": [
           {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
+            "class": "devicon-reactjs-plain",
+            "name": "React"
           },
           {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
-          },
-          {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
           }
         ]
       }
