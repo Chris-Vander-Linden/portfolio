@@ -5,6 +5,7 @@ import "./App.scss";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import About from "./components/About";
+import More from "./components/More";
 import Home from "./components/Home";
 
 class App extends Component {
@@ -62,6 +63,10 @@ class App extends Component {
               resumeData={ this.state.resumeData }
               sharedData={ this.state.sharedData }
             /> }>
+          </Route>
+          <Route
+            path="/more"
+            element={ <More /> }>
           </Route>
           <Route
             path="/about"
