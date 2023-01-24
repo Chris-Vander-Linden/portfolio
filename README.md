@@ -1,7 +1,8 @@
 # Time Estimate
 
 ## Ticket 1
-Number and name of feature: Install and upload base tempelate.
+
+Number and name of feature: Install and upload base template.
 
 Estimate of time needed to complete: 30 minutes
 
